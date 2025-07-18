@@ -92,6 +92,7 @@
     // 默认时label的样式
     .v-label.v-field-label {
       color: var(--Text-grey-1) !important;
+      margin-inline-end: 8px !important;
     }
     .v-label {
       opacity: 1 !important;
