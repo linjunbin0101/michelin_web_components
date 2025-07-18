@@ -19,10 +19,10 @@ const messages = {
   zhHans: mergeTranslations(zhHansJson, vuetifyZhHans),
 };
 const i18n = createI18n({
-  legacy: false,
-  locale: "en",
-  fallbackLocale: "en",
-  messages,
+	legacy: false,
+	locale: 'en',
+	fallbackLocale: 'en',
+	messages,
 });
 
 const app = createApp(App);
@@ -57,8 +57,8 @@ const vuetify = createVuetify({
   },
   // add language support
   locale: {
-    adapter: createVueI18nAdapter({ i18n, useI18n }),
-  },
+		adapter: createVueI18nAdapter({ i18n, useI18n }),
+	},
 });
 const hcComponent = createHcComponent();
 
