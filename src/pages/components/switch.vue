@@ -34,10 +34,6 @@
 			</template>
 		</v-expansion-panel>
 	</v-expansion-panels>
-	<div style="margin-top: 50px">
-		<h3>无法修改的样式</h3>
-		<p>1、暂无</p>
-  </div>
 </template>
 
 <script setup>

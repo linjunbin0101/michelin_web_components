@@ -22,10 +22,10 @@
 				@update:model-value="(val) => toggleItemSelection(item, val)" />
 		</template>
 	</v-data-table>
-	<div style="margin-top: 50px">
+	<!-- <div style="margin-top: 50px">
 		<h3>问题</h3>
 		<p>1、分页（后续分页组件完成修改）</p>
-	</div>
+	</div> -->
 </template>
 
 <script setup>

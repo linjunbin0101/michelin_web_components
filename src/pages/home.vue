@@ -70,7 +70,7 @@ const items = ref([
   { name: 'Alert (警告框)', id: 'Alert', icon: 'circle', color: 'green' },
   { name: 'Snackbar (消息条)', id: 'Snackbar', icon: 'circle', color: 'green' },
   { name: 'Radio (单选按钮)', id: 'Radio', icon: 'circle', color: 'green' },
-  { name: 'AutoComplete (自动补全)', id: 'AutoComplete', icon: 'circle', color: '#b80b0b' },
+  { name: 'AutoComplete (自动补全)', id: 'AutoComplete', icon: 'circle', color: 'yellow' },
   { name: 'Icons (图标)', id: 'Icons', icon: 'circle', color: 'green' },
   { name: 'Chip (纸片)', id: 'Chip', icon: 'circle', color: 'green' },
   { name: 'ExpansionPanels (扩展面板)', id: 'ExpansionPanels', icon: 'circle', color: 'green' },
@@ -79,7 +79,7 @@ const items = ref([
   { name: 'Divider (分隔线)', id: 'Divider', icon: 'circle', color: 'green' },
   { name: 'Tooltips (提示)', id: 'Tooltips', icon: 'circle', color: 'green' },
   { name: 'Textareas (多行文本框)', id: 'Textareas', icon: 'circle', color: 'yellow' },
-  { name: 'Tabs (选项卡)', id: 'Tabs', icon: 'circle', color: '#b80b0b' },
+  { name: 'Tabs (选项卡)', id: 'Tabs', icon: 'circle', color: '#615ced' },
   { name: 'Checkboxs (复选框)', id: 'Checkbox', icon: 'circle', color: 'green' },
   { name: 'Selects (下拉选择框)', id: 'Select', icon: 'circle', color: 'yellow' },
   { name: 'Switch (开关)', id: 'Switch', icon: 'circle', color: 'green' },
@@ -87,10 +87,10 @@ const items = ref([
   { name: 'Pagination (分页)', id: 'Pagination', icon: 'circle', color: '#615ced' },
   { name: 'Menu (菜单)', id: 'Menu', icon: 'circle', color: '#615ced' },
   { name: 'DateInput (日期选择)', id: 'DateInput', icon: 'circle', color: 'green' },
-  { name: 'HcTable (统计)', id: 'HcTable', icon: 'circle', color: '#615ced' },
+  { name: 'HcTable (统计)', id: 'HcTable', icon: 'circle', color: 'green' },
   { name: 'HcFilter (筛选)', id: 'HcFilter', icon: 'circle', color: '#615ced' },
   { name: 'HcTableBar (表格工具栏)', id: 'HcTableBar', icon: 'circle', color: '#615ced' },
-  { name: 'Translation (翻译)', id: 'Translation', icon: 'circle', color: '#615ced' },
+  // { name: 'Translation (翻译)', id: 'Translation', icon: 'circle', color: '#615ced' },
 ])
 
 const list = {
