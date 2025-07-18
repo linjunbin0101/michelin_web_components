@@ -123,6 +123,11 @@
     }
   }
 
+  // 设置 label float的时候的边距
+  .v-field.v-field--active .v-label.v-field-label--floating {
+    margin-inline: 4px !important
+  }
+
   // 输入框有值时的label
   .v-text-field--has-input {
     .v-field__outline__notch {
