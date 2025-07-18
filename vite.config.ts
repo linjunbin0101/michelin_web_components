@@ -8,6 +8,7 @@ export default defineConfig({
     vue(),
     vueJsx()
   ],
+  base: './',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src/vuetify/vuetify-src')
