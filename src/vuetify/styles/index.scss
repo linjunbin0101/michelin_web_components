@@ -1,0 +1,21 @@
+@use 'sass:map';
+
+// variables
+@use './variables' as *;
+
+// Utils
+@use './utils/mixins' as *;
+
+// Component styles
+@use './vuetify' as vuetify;
+
+// @use './components/hc' as hc;
+@use './fonts' as *;
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url('../assets/fonts/googleFontIcon.woff2') format('woff2');
+}

@@ -1,0 +1,22 @@
+@use './base' as *;
+
+:root {
+  --Button-primary: #{$prim-color-blue};
+  --Button-primary-hover: #{$sec-color-blue-darken02};
+  --Button-primary-pressed: #{$sec-color-blue-darken03};
+  --Button-primary-disabled: #{$mds-prim-color-grey100};
+  --Button-disabled: #{$mds-prim-color-grey50};
+  --Button-secondary-hover: #{$prim-color-blue-lighten-01};
+  --Button-secondary-pressed: #{$prim-color-blue-lighten-03};
+  --Button-error: #{$status-color-red};
+  --Button-error-disabled: #{$mds-prim-color-grey100};
+  --Button-error-hover: #{$status-color-red-2};
+  --Button-error-pressed: #{$status-color-red-3};
+  --Button-control-hover: #{$mds-prim-color-grey50};
+  --Button-control-pressed: #{$mds-prim-color-grey100};
+  --Button-invertbg-hover: #{$prim-color-blue-darken-03};
+  --Button-invertbg-pressed: #{$prim-color-blue-darken-02};
+  --Button-chip-bg-red: #{$status-color-red-lighten};
+  --Button-chip-bg-orange: #{$status-color-orange-lighten};
+  --Button-chip-bg-green: #{$status-color-green-lighten};
+} 

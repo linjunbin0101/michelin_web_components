@@ -1,0 +1,16 @@
+@use './base' as *;
+
+:root {
+  --Surface-default-bg: #{$mds-prim-color-white};
+  --Surface-invert-bg: #{$prim-color-blue};
+  --Surface-secondary-bg: #{$mds-prim-color-grey50};
+  --Surface-mask-1: #{$black-opacity60};
+  --Surface-mask-2: #{$black-opacity10};
+  --Surface-disabled: #{$mds-prim-color-grey300};
+  --Surface-tooltip: #{$mds-prim-color-grey700};
+  --Surface-warning: #{$status-color-orange};
+  --Surface-info-bg: #{$status-color-info-lighten};
+  --Surface-warning-bg: #{$status-color-orange-lighten};
+  --Surface-success-bg: #{$status-color-green-lighten};
+  --Surface-error-bg: #{$status-color-red-lighten};
+} 

@@ -1,0 +1,115 @@
+@mixin light {
+  &.v-checkbox {
+    .v-selection-control {
+      min-height: 24px;
+      opacity: 1;
+
+      &__input {
+        > .v-icon {
+          opacity: 1;
+        }
+      }
+
+      &__wrapper {
+        margin-right: 4px;
+      }
+
+      &__wrapper,
+      &__input {
+        width: 24px;
+        height: 24px;
+      }
+
+      &--density-default {
+        .v-label {
+          color: #1a1a1a;
+        }
+
+        .v-icon {
+          fill: #1a1a1a;
+          color: #1a1a1a;
+        }
+      }
+
+      &--dirty {
+        .v-label {
+          color: #1a1a1a;
+        }
+
+        .v-icon {
+          fill: #27509b;
+          color: #27509b;
+        }
+      }
+
+      &--disabled {
+        .v-label {
+          color: #999999;
+        }
+
+        .v-icon {
+          fill: #999999;
+          color: #999999;
+        }
+
+        .v-selection-control__wrapper {
+          .material-symbols-outlined  {
+            position: relative;
+            &::after {
+              content: '';
+              width: 24px;
+              height: 24px;
+              background-color: #fff; 
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+            &::before {
+              content: '';
+              width: 18px;
+              height: 18px;
+              border: 1.5px solid #999999;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 999;
+              background-color: rgba(0,0,0,0.1);
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }    
+  }
+}
+
+.v-input__control {
+  margin-bottom: 8px;
+}
+
+.v-checkbox-btn {
+  margin-bottom: 0px;
+}
+
+.v-input__details,
+.__web-inspector-hide-shortcut__ {
+  height: 0;
+  min-height: 0;
+}
+
+.v-input--error {
+  .v-input__control {
+    margin-bottom: 2px;
+  }
+  .v-input__details,
+  .__web-inspector-hide-shortcut__ {
+    height: auto;
+    min-height: auto;
+  }
+}
+
+.v-messages__message {
+  color: var(--Text-red-status);
+}

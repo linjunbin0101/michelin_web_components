@@ -1,0 +1,54 @@
+@use "alert";
+@use "autocomplete";
+@use "badge";
+@use "button";
+@use "checkbox";
+@use "chip";
+@use "dateinput";
+@use "common";
+@use "divider";
+@use "empty-state";
+@use "expansion-panels";
+@use "icons";
+@use "list";
+@use "menu";
+@use "pagination";
+@use "radio";
+@use "snackbar";
+@use "switch";
+@use "tabs";
+@use "text-fields-display";
+@use "textareas";
+@use "tooltips";
+@use "text-fields";
+
+// Export common styles
+@include badge.common;
+@include tabs.common;
+
+// Wrap all component styles with .v-theme--light
+.v-theme--light {
+  @include alert.light;
+  @include autocomplete.light;
+  @include badge.light;
+  @include button.light;
+  @include checkbox.light;
+  @include chip.light;
+  @include common.light;
+  @include dateinput.light;
+  @include divider.light;
+  @include empty-state.light;
+  @include expansion-panels.light;
+  @include icons.light;
+  @include list.light;
+  @include menu.light;
+  @include pagination.light;
+  @include radio.light;
+  @include snackbar.light;
+  @include switch.light;
+  @include tabs.light;
+  @include text-fields-display.light;
+  @include textareas.light;
+  @include tooltips.light;
+  @include text-fields.light;
+}

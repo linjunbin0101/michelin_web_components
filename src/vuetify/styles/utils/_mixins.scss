@@ -1,0 +1,88 @@
+// // Flexbox
+// @mixin flex-center {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// @mixin flex-between {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// @mixin flex-column {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// // Typography
+// @mixin text-truncate {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+// @mixin text-small {
+//   font-size: 0.875rem;
+//   line-height: 1.25rem;
+// }
+
+// @mixin text-large {
+//   font-size: 1.25rem;
+//   line-height: 1.75rem;
+// }
+
+// // Spacing
+// @mixin margin-small {
+//   margin: $hc-spacing-sm;
+// }
+
+// @mixin margin-medium {
+//   margin: $hc-spacing-md;
+// }
+
+// @mixin margin-large {
+//   margin: $hc-spacing-lg;
+// }
+
+// // Responsive
+// @mixin respond-to($breakpoint) {
+//   @if $breakpoint == xs {
+//     @media (max-width: $hc-breakpoint-xs) { @content; }
+//   }
+//   @else if $breakpoint == sm {
+//     @media (min-width: $hc-breakpoint-xs) and (max-width: $hc-breakpoint-sm) { @content; }
+//   }
+//   @else if $breakpoint == md {
+//     @media (min-width: $hc-breakpoint-sm) and (max-width: $hc-breakpoint-md) { @content; }
+//   }
+//   @else if $breakpoint == lg {
+//     @media (min-width: $hc-breakpoint-md) and (max-width: $hc-breakpoint-lg) { @content; }
+//   }
+//   @else if $breakpoint == xl {
+//     @media (min-width: $hc-breakpoint-lg) { @content; }
+//   }
+// }
+
+// // Transitions
+// @mixin transition-base {
+//   transition: all $hc-transition-duration $hc-transition-timing;
+// }
+
+// @mixin transition-transform {
+//   transition: transform $hc-transition-duration $hc-transition-timing;
+// }
+
+// // Shadows
+// @mixin elevation-1 {
+//   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2),
+//               0 2px 2px 0 rgba(0, 0, 0, 0.14),
+//               0 2px 4px 0 rgba(0, 0, 0, 0.12);
+// }
+
+// @mixin elevation-2 {
+//   box-shadow: 0 4px 2px -4px rgba(0, 0, 0, 0.2),
+//               0 2px 4px 0 rgba(0, 0, 0, 0.14),
+//               0 2px 4px 0 rgba(0, 0, 0, 0.12);
+// } 

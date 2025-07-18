@@ -1,0 +1,19 @@
+@mixin light {
+  &.v-icon{
+    &.v-icon--size-x-small{
+      font-size: 12px;
+    }
+    &.v-icon--size-small{
+      font-size: 16px;
+    }
+    //&.v-icon--size-default{
+    //  font-size: 24px;
+    //}
+    &.v-icon--size-large{
+      font-size: 36px;
+    }
+    &.v-icon--size-x-large{
+      font-size: 40px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use './base' as *;
+
+:root {
+  --Icon-default: #{$mds-prim-color-grey900};
+  --Icon-brand: #{$prim-color-blue};
+  --Icon-invert: #{$mds-prim-color-white};
+  --Icon-disabled: #{$mds-prim-color-grey400};
+  --Icon-grey-2: #{$mds-prim-color-grey600};
+  --Icon-error: #{$status-color-red};
+  --Icon-orange: #{$status-color-orange-dark};
+  --Icon-success: #{$status-color-green};
+  --Icon-info: #{$status-color-info};
+} 

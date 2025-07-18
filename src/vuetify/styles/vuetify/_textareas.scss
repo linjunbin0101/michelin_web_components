@@ -1,0 +1,246 @@
+@mixin light {
+  &.v-textarea.v-textarea-2 {
+    &.v-input--error {
+      .v-input__details {
+        .v-messages {
+          color: #b71c1c;
+        }
+      }
+    }
+    .v-input__details {
+      box-sizing: border-box;
+      padding-top: 0px;
+      padding-inline: 0;
+      font-size: 12px;
+      color: #727373;
+
+      .v-counter {
+        color: #4d4d4d;
+      }
+
+      .v-messages {
+        opacity: 1;
+      }
+    }
+
+    .v-field--variant-outlined {
+      .v-label.v-field-label {
+        top: 8px;
+      }
+
+      textarea {
+        position: relative;
+        color: #1a1a1a;
+      }
+
+      textarea[rows="4"] {
+        height: 108px !important;
+      }
+
+      textarea[rows="5"] {
+        height: 82px !important;
+      }
+
+      .v-field__input {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        mask-image: none;
+
+        &::placeholder {
+          color: #4d4d4d;
+        }
+      }
+
+      .v-field__field {
+        .v-label.v-field-label {
+          color: #cccccc;
+          opacity: 1;
+        }
+      }
+
+      .v-field__append-inner {
+        padding-top: 12px;
+      }
+      .v-field__clearable {
+        padding-top: 12px !important;
+        padding-right: 12px !important;
+        margin-inline: 0;
+
+        & > .v-icon {
+          color: #1a1a1a;
+          opacity: 1;
+          min-width: 20px;
+          width: 20px;
+          height: 20px;
+        }
+
+        .mdi:before {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &.v-field--error:not(.v-field--disabled) {
+        .v-field__append-inner {
+          padding-right: 12px !important;
+          .v-icon {
+            color: #b71c1c;
+          }
+        }
+        .v-field__clearable {
+          padding-right: 0 !important;
+        }
+      }
+
+      .v-field__outline {
+        --v-field-border-opacity: 1;
+      }
+    }
+  }
+
+  .v-input__control {
+    margin-bottom: 0 !important;
+    .v-field.v-field--appended {
+      padding-inline-end: 0px !important;
+    }
+  }
+
+  // 输入框文本样式
+  .v-field__input {
+    opacity: 1 !important;
+    textarea {
+      opacity: 1 !important;
+      font-weight: 400 !important;
+      caret-color: var(--Border-secondary);
+    }
+  }
+
+  // 禁用时文本框样式
+  .v-field--disabled {
+    .v-field__input {
+      opacity: 1 !important;
+      textarea {
+        color: var(--Text-disabled) !important;
+        font-weight: 400 !important;
+        caret-color: var(--Text-disabled);
+      }
+    }
+  }
+
+  // 禁用时输入框的样式
+  .v-field--disabled {
+    .v-field__input {
+      color: var(--Text-disabled) !important;
+    }
+  }
+
+  // 默认时label的样式
+  .v-label.v-field-label {
+    color: var(--Text-grey-1) !important;
+  }
+  .v-label {
+    opacity: 1 !important;
+  }
+
+  // 禁用时label的样式
+  .v-field--disabled .v-label.v-field-label {
+    color: var(--Text-disabled) !important;
+  }
+
+  // 默认时的样式边框
+  .v-field--variant-outlined {
+    .v-field__outline {
+      color: var(--Border-control);
+      --v-field-border-opacity: 1 !important;
+    }
+
+    // hover时边框样式
+    &:hover {
+      .v-field__outline {
+        color: var(--Border-grey);
+      }
+    }
+  }
+
+  // 禁用时的边框样式
+  .v-field--disabled {
+    opacity: 1 !important;
+  }
+
+  // 错误时的边框样式
+  .v-textarea--has-input.v-input--error {
+    .v-field__clearable {
+      opacity: 1 !important;
+      margin-right: 6px !important;
+    }
+    .v-field__outline {
+      color: var(--Border-error) !important;
+    }
+  }
+
+  // 输入框有值时的label
+  .v-textarea--has-input.v-text-field {
+    .v-field__input {
+      padding-right: 6px !important;
+    }
+    .v-field__outline__notch {
+      .v-label.v-field-label--floating {
+        color: var(--Text-default) !important;
+        font-size: var(--Size-Annotation) !important;
+      }
+    }
+    // 禁用时样式
+    .v-field--disabled {
+      .v-label.v-field-label--floating {
+        color: var(--Text-disabled) !important;
+      }
+      // chip，多选
+      .v-chip__underlay {
+        color: var(--Surface-mask-2) !important;
+      }
+      .v-chip__content {
+        color: var(--Text-disabled) !important;
+      }
+    }
+  }
+
+  // 禁用时后缀样式
+  .v-field--disabled {
+    .v-text-field__suffix {
+      opacity: 1 !important;
+      .v-text-field__suffix__text {
+        opacity: 1 !important;
+        color: var(--Text-disabled) !important;
+      }
+    }
+  }
+
+  // 默认隐藏错误图标
+  .v-field__append-inner {
+    width: 0;
+    opacity: 0;
+  }
+
+  // 输入框有值时，显示错误图标
+  .v-textarea--has-input {
+    .v-field__append-inner {
+      width: auto !important;
+      opacity: 1 !important;
+    }
+  }
+
+  // 默认隐藏错误信息
+  .v-input__details {
+    height: 0 !important;
+  }
+
+  // input有值，error状态时 错误图标、错误提示词、label样式
+  .v-textarea--has-input.v-input--error {
+    .v-label.v-field-label--floating {
+      color: var(--Text-red-status) !important;
+    }
+    .v-input__details {
+      height: auto !important;
+    }
+  }
+}

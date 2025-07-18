@@ -1,0 +1,202 @@
+@mixin light {
+  &.v-text-field.v-text-field-2 {
+    .v-field__input {
+      padding: 8px 12px !important;
+    }
+    .v-text-field__suffix {
+      display: block;
+      height: 44px;
+      opacity: 1 !important;
+      padding-inline-end: 12px !important;
+      .v-text-field__suffix__text {
+        opacity: 1 !important;
+        font-size: 12px;
+        color: var(--Text-grey-1) !important;
+      }
+    }
+    .v-input__details {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  // 默认的内置前缀样式
+  .v-field__prepend-inner {
+    color: var(--Text-grey-1) !important;
+    width: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .v-icon {
+      opacity: 1 !important;
+      min-width: 20px !important;
+      height: 20px !important;
+    }
+  }
+
+  // 有suffix时，input的padding-inline-end为8px
+  .v-text-field--suffixed {
+    .v-field__input {
+      padding-right: 8px !important;
+    }
+  }
+
+  // 输入框文本样式
+  .v-field__input {
+    opacity: 1 !important;
+    input {
+      // opacity: 1 !important;
+      font-weight: 400 !important;
+      caret-color: var(--Border-secondary);
+    }
+  }
+
+  // 禁用时文本框样式
+  .v-field--disabled {
+    .v-field__input {
+      opacity: 1 !important;
+      input {
+        color: var(--Text-disabled) !important;
+        font-weight: 400 !important;
+        caret-color: var(--Text-disabled);
+      }
+    }
+  }
+
+  // 禁用时输入框的样式
+  .v-field--disabled {
+    .v-field__input {
+      color: var(--Text-disabled) !important;
+    }
+  }
+
+  // 默认时label的样式
+  .v-label.v-field-label {
+    color: var(--Text-grey-1) !important;
+    width: 100%;
+    margin-inline-start: 12px;
+    margin-inline-end: 12px;
+  }
+  .v-label {
+    opacity: 1 !important;
+  }
+
+  // 禁用时label的样式
+  .v-field--disabled .v-label.v-field-label {
+    color: var(--Text-disabled) !important;
+  }
+
+  // 默认时的样式边框
+  .v-field--variant-outlined {
+    .v-field__outline {
+      color: var(--Border-control);
+      --v-field-border-opacity: 1 !important;
+    }
+
+    // hover时边框样式
+    &:hover {
+      .v-field__outline {
+        color: var(--Border-grey);
+      }
+    }
+  }
+
+  // 禁用时的边框样式
+  .v-field--disabled {
+    opacity: 1 !important;
+  }
+
+  // 错误时的边框样式
+  .v-text-field--has-input.v-input--error:not(.v-text-tip-message) {
+    .v-field__clearable {
+      opacity: 1 !important;
+      margin-right: 8px !important;
+    }
+    .v-field__input {
+      padding-right: 8px !important;
+    }
+    .v-text-field__suffix {
+      padding-inline-end: 8px !important;
+    }
+    .v-field__outline {
+      color: var(--Border-error) !important;
+    }
+  }
+
+  // 输入框有值时的label
+  .v-text-field--has-input {
+    .v-field__outline__notch {
+      .v-label.v-field-label--floating {
+        color: var(--Text-default) !important;
+        font-size: var(--Size-Annotation) !important;
+      }
+    }
+    // 禁用时样式
+    .v-field--disabled {
+      .v-label.v-field-label--floating {
+        color: var(--Text-disabled) !important;
+      }
+      // chip，多选
+      .v-chip__underlay {
+        color: var(--Surface-mask-2) !important;
+      }
+      .v-chip__content {
+        color: var(--Text-disabled) !important;
+      }
+    }
+  }
+
+  // 禁用时后缀样式
+  .v-field--disabled {
+    .v-text-field__suffix {
+      opacity: 1 !important;
+      .v-text-field__suffix__text {
+        opacity: 1 !important;
+        color: var(--Text-disabled) !important;
+      }
+    }
+  }
+
+  // 默认隐藏错误图标
+  .v-field__append-inner {
+    width: 0;
+    opacity: 0;
+  }
+
+  // 输入框有值时，显示错误图标
+  .v-text-field--has-input {
+    .v-field__append-inner {
+      width: auto !important;
+      opacity: 1 !important;
+      padding-right: 12px !important;
+    }
+  }
+
+  // 默认隐藏错误信息
+  .v-input__details {
+    height: 0 !important;
+    .v-messages__message {
+      line-height: 14px !important;
+    }
+  }
+
+  // 当提示是非错误信息时，不隐藏
+  .v-text-tip-message {
+    .v-input__details {
+      height: auto !important;
+      .v-messages__message {
+        color: #727373 !important;
+      }
+    }
+  }
+
+  // input有值，error状态时 错误图标、错误提示词、label样式
+  .v-text-field--has-input.v-input--error:not(.v-text-tip-message) {
+    .v-label.v-field-label--floating {
+      color: var(--Text-red-status) !important;
+    }
+    .v-input__details {
+      height: auto !important;
+    }
+  }
+}

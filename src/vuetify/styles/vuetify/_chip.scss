@@ -1,0 +1,95 @@
+@mixin light {
+  &.v-chip {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+  
+    &.bg-grey {
+      color: #1A1A1A !important;
+      background-color: #F2F2F2 !important;
+    }
+  
+    &.bg-blue {
+      color: #FFFFFF !important;
+      background-color: #27509B !important;
+    }
+  
+    &.text-blue {
+      color: #27509B !important;
+    }
+  
+    &.text-green {
+      color: #2E7D32 !important;
+      background-color: #E8F5E5 !important;
+    }
+  
+    &.text-orange {
+      color: #9E6100 !important;
+      background-color: #FFF1CE !important;
+    }
+  
+    &.text-red {
+      color: #B71C1C !important;
+      background-color: #F4CEC2 !important;
+    }
+  
+    &.v-chip--disabled {
+      color: #999999 !important;
+      background-color: rgba(0, 0, 0, 0.10) !important;
+      opacity: 1
+    }
+  
+    &.v-chip--size-small, &.v-chip--size-default {
+      height: 24px;
+      padding: 0 12px;
+  
+      .v-chip__close {
+        .v-icon{
+         font-size: 16px;
+        }
+        font-size: 16px;
+        max-height: 16px;
+        max-width: 16px;
+        margin-inline-start: 5px;
+        margin-inline-end: 0;
+      }
+  
+      .v-icon--start {
+        margin-inline-start: 0;
+        margin-inline-end: 5px;
+      }
+  
+      .v-icon--size-default {
+        font-size: 16px;
+      }
+    }
+  
+    &.v-chip--size-default {
+      height: 32px;
+    }
+  
+    &.v-chip--size-large {
+      height: 40px;
+      padding: 0 16px;
+  
+      .v-chip__close {
+        .v-icon{
+          font-size: 20px;
+         }
+        font-size: 20px;
+        max-height: 20px;
+        max-width: 20px;
+        margin-inline-start: 5px;
+        margin-inline-end: 0;
+      }
+  
+      .v-icon--start {
+        margin-inline-start: 0;
+        margin-inline-end: 5px;
+      }
+  
+      .v-icon--size-default {
+        font-size: 20px;
+      }
+    }
+  }
+}

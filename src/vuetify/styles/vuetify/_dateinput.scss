@@ -1,0 +1,7 @@
+@mixin light {
+  .v-date-picker-month__day--selected {
+    .v-btn--variant-flat {
+      background-color: var(--Button-primary) !important;
+    }
+  } 
+}

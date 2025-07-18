@@ -1,0 +1,64 @@
+@mixin light {
+  &.v-text-field-display{
+    min-height: 41px;
+    display: flex;
+    flex-direction: column;
+    .v-text-field-label{
+      height: 19px;
+      color: #666;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+  
+      .v-text-field-label-prepend-icon{
+        margin-right: 4px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+      }
+      .v-text-field-label-append-icon{
+        margin-left: 4px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+      }
+    }
+    .v-text-field-text{
+      flex: 1;
+      color: #1A1A1A;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      .v-text-field-text-prepend-icon{
+        margin-right: 8px;
+        display: flex;
+        align-self: flex-start;
+        font-size: 20px;
+        height: 24px;
+        align-items: center;
+        color: #27509B;
+      }
+      .v-text-field-text-name{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 50px;
+      }
+      .v-text-field-text-append-icon{
+        margin-left: 8px;
+        align-self: flex-start;
+        display: flex;
+        font-size: 20px;
+        height: 24px;
+        align-items: center;
+        color: #27509B;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "title": "My Page Title",
+    "name": "Name",
+    "species": "Species",
+    "diet": "Diet",
+    "habitat": "Habitat",
+
+    "checkboxLabel": "Checkbox Label",
+    "all": "All"
+}

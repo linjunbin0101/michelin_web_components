@@ -1,0 +1,29 @@
+@use './base' as *;
+
+:root {
+  --size-spacing-4-px: #{$size-4};
+  --size-spacing-8-px: #{$size-8};
+  --size-spacing-12-px: #{$size-12};
+  --size-spacing-16-px: #{$size-16};
+  --size-spacing-24-px: #{$size-24};
+  --size-spacing-32-px: #{$size-32};
+  --size-spacing-40-px: #{$size-40};
+  --size-spacing-64-px: #{$size-64};
+  --size-spacing-80-px: #{$size-80};
+
+  --Gutter: #{$size-24};
+  --Btn-height-small: #{$size-32};
+  --Btn-height-normal: #{$size-44};
+  --Field-height-small: #{$size-40};
+  --Field-height-default: #{$size-44};
+  --Radio-size: #{$size-24};
+  --Checkbox-size: #{$size-24};
+  --Switch-height: #{$size-24};
+  --Switch-width: #{$size-48};
+  --Switch-ellipse: 18px;
+  --Chip-height-small: #{$size-24};
+  --Chip-height-medium: #{$size-32};
+  --Chip-height-large: #{$size-40};
+  --List-item-height: #{$size-40};
+}
+

@@ -1,0 +1,55 @@
+@mixin light {
+  &.v-empty-state{
+    .v-btn--variant-elevated.bg-surface-variant{
+      background: #27509B !important;
+      color: #fff !important;
+    }
+    &:not(.v-empty-state--layout--horizontal){
+      .v-empty-state__actions{
+        padding: 24px 16px;
+      }
+      .v-empty-state__title{
+        font-size: 32px;
+        font-weight: 700;
+        color: #1A1A1A;
+        margin-top: 4px;
+      }
+      .v-empty-state__text{
+        font-weight: 400;
+        font-size: 16px;
+        color: #1A1A1A;
+      }
+    }
+    &.v-empty-state--layout--horizontal{
+      width: 500px;
+      display: grid;
+      min-height: unset;
+      grid-template-columns: minmax(106px,240px) 1fr;
+      grid-template-rows: repeat(3,1fr);
+      grid-template-areas:
+        "sidebar content1"
+        "sidebar content2"
+        "sidebar content3";
+      column-gap: 10px;
+      margin: 0 auto;
+      .v-empty-state__media{
+        grid-area: sidebar;
+      }
+      .v-empty-state__title{
+        grid-area: content1;
+        text-align: left;
+        margin-bottom: 0;
+      }
+      .v-empty-state__text{
+        max-width: 500px;
+        grid-area: content2;
+        text-align: left;
+        padding: 0;
+      }
+      .v-empty-state__actions{
+        grid-area: content3;
+        padding: 0;
+      }
+    }
+  }
+}

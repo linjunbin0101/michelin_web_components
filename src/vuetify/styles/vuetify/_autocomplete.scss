@@ -1,0 +1,281 @@
+@mixin light {
+  &.v-autocomplete.v-autocomplete-2 {
+    --v-input-control-height: 44;
+    .v-field__input {
+      flex-wrap: nowrap !important;
+      overflow-x: scroll;
+      padding-right: 8px !important;
+      input {
+        opacity: 1 !important;
+      }
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+    .v-field--variant-outlined {
+      .v-chip {
+        max-width: 200px;
+        &.v-chip--variant-tonal {
+          .v-chip__underlay {
+            color: #f2f2f2;
+            opacity: 1;
+          }
+        }
+        .v-chip__content {
+          color: #1a1a1a;
+          font-size: 14px;
+          z-index: 1;
+          text-overflow: ellipsis;
+          display: inline-block;
+        }
+        .v-chip__close {
+          .v-icon {
+            color: #1a1a1a;
+          }
+        }
+      }
+    }
+    &.v-input--error {
+      &.v-text-field {
+        .v-input__details {
+          padding-left: 0;
+        }
+      }
+    }
+    .v-field__append-inner {
+      width: auto !important;
+      opacity: 1 !important;
+      padding-right: 12px !important;
+      .v-icon {
+        width: 20px !important;
+        height: 20px !important;
+      }
+    }
+    .v-autocomplete__selection,
+    .v-field__clearable,
+    .v-field__append-inner,
+    .v-field__prepend-inner,
+    .v-input__prepend,
+    .v-input__append {
+      color: #666 !important;
+    }
+
+    // 输入框文本样式
+    .v-field__input {
+      opacity: 1 !important;
+      input {
+        // opacity: 1 !important;
+        font-weight: 400 !important;
+        caret-color: var(--Border-secondary);
+      }
+    }
+
+    // 禁用时文本框样式
+    .v-field--disabled {
+      .v-field__input {
+        opacity: 1 !important;
+        input {
+          color: var(--Text-disabled) !important;
+          font-weight: 400 !important;
+          // caret-color: var(--Text-disabled);
+        }
+      }
+    }
+
+    // 禁用时输入框的样式
+    .v-field--disabled {
+      .v-autocomplete__selection {
+        color: var(--Text-disabled) !important;
+      }
+    }
+
+    // 默认时label的样式
+    .v-label.v-field-label {
+      color: var(--Text-grey-1) !important;
+    }
+    .v-label {
+      opacity: 1 !important;
+    }
+
+    // 禁用时label的样式
+    .v-field--disabled .v-label.v-field-label {
+      color: var(--Text-disabled) !important;
+    }
+  }
+  .v-autocomplete__content {
+    .v-list {
+      background: #fff;
+      .v-list-item--active {
+        .v-selection-control__input > .v-icon {
+          color: #27509b !important;
+        }
+      }
+      .v-list-item--density-default:not(.v-selection-control--dirty) {
+        .v-selection-control__input > .v-icon {
+          color: #1a1a1a;
+          opacity: 1 !important;
+        }
+      }
+      .v-list-item {
+        background: #fff;
+      }
+    }
+  }
+
+  // select的时候，input取消光标
+  .v-autocomplete--input-disable {
+    input {
+      caret-color: transparent !important;
+    }
+  }
+
+  // 清除叉叉图标的样式
+  .v-field__clearable {
+    margin-inline: 0 !important;
+    // margin-right: 8px !important;
+    .v-icon--clickable {
+      font-size: var(--hc-icon-size-20);
+      color: #1a1a1a;
+      opacity: 1;
+    }
+  }
+
+  // 多选 禁用
+  .v-autocomplete--multiple {
+    .v-field__append-inner {
+      .v-icon {
+        opacity: 1;
+        color: #1a1a1a !important;
+      }
+    }
+    .v-field--disabled {
+      .v-field__append-inner {
+        .v-icon {
+          opacity: 1;
+          color: #999 !important;
+        }
+      }
+    }
+  }
+
+  // 默认时的样式边框
+  .v-field--variant-outlined {
+    .v-field__outline {
+      color: var(--Border-control);
+      --v-field-border-opacity: 1 !important;
+    }
+
+    // hover时边框样式
+    &:hover {
+      .v-field__outline {
+        color: var(--Border-grey);
+      }
+    }
+  }
+
+  // 禁用时的边框样式
+  .v-field--disabled {
+    opacity: 1 !important;
+  }
+
+  // 错误时的边框样式
+  .v-autocomplete--has-input.v-input--error {
+    .v-field__clearable {
+      opacity: 1 !important;
+      margin-right: 8px !important;
+    }
+    .v-field__outline {
+      color: var(--Border-error) !important;
+    }
+  }
+
+  .v-field__append-inner {
+    .v-icon--size-default {
+      font-size: var(--hc-icon-size-20);
+      opacity: 1;
+      margin-left: 0 !important;
+    }
+  }
+
+  .v-field__input {
+    padding-left: 12px !important;
+  }
+
+  .v-list-item_multiple {
+    padding: 8px 16px !important;
+  }
+
+  .v-list-item_single {
+    padding: 13px 16px !important;
+  }
+  .v-input__details {
+    padding-top: 0;
+    min-height: auto;
+  }
+
+  // 默认时上下箭头样式
+  .v-autocomplete__menu-icon {
+    color: #666 !important;
+  }
+
+  // 输入状态时
+  // 上下箭头样式
+  .v-autocomplete--has-input,
+  .v-field--focused {
+    .v-autocomplete__menu-icon {
+      color: #1a1a1a !important;
+    }
+  }
+
+  .v-autocomplete--has-input {
+    .v-field__clearable {
+      margin-right: 8px !important;
+    }
+  }
+
+  // 禁用时
+  // 上下箭头样式
+  .v-field--disabled {
+    .v-autocomplete__menu-icon {
+      color: #999 !important;
+    }
+  }
+
+  // 输入框有值时的label
+  .v-autocomplete--has-input {
+    .v-field__outline__notch {
+      .v-label.v-field-label--floating {
+        color: var(--Text-default) !important;
+        font-size: var(--Size-Annotation) !important;
+      }
+    }
+    // 禁用时样式
+    .v-field--disabled {
+      .v-label.v-field-label--floating {
+        color: var(--Text-disabled) !important;
+      }
+      // chip，多选
+      .v-chip__underlay {
+        color: var(--Surface-mask-2) !important;
+      }
+      .v-chip__content {
+        color: var(--Text-disabled) !important;
+      }
+    }
+  }
+
+  // 默认隐藏错误信息
+  .v-input__details {
+    height: 0 !important;
+  }
+
+  // input有值，error状态时 错误提示词、label样式
+  .v-autocomplete--has-input.v-input--error {
+    .v-label.v-field-label--floating {
+      color: var(--Text-red-status) !important;
+    }
+    .v-input__details {
+      height: auto !important;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@mixin common {
+  .v-badge.v-badge--dot {
+    .v-badge__badge {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 10px;
+    }
+  }
+}
+
+@mixin light {
+  &.v-badge__badge {
+    font-size: 12px;
+    padding: 4px 6px;
+    color: #fff !important;
+
+    .v-icon {
+      font-size: 12px;
+    }
+  
+    &.bg-blue {
+      background-color: #27509b !important;
+    }
+  
+    &.bg-red {
+      background-color: #B71C1C !important;
+    }
+  
+    &.bg-green {
+      background-color: #2E7D32 !important;
+    }
+  
+    &.bg-yellow {
+      background-color: #F9A825 !important;
+      color: #1a1a1a !important;
+    }
+  
+    &.bg-grey {
+      background-color: #4D4D4D !important;
+    }
+  }
+}

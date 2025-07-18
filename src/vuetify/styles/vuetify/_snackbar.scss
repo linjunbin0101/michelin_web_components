@@ -1,0 +1,26 @@
+@mixin light {
+  &.v-snackbar{
+    justify-content: flex-end;
+    &:not(.v-snackbar--center):not(.v-snackbar--top){
+      align-items: flex-start;
+    }
+    .v-snackbar__actions{
+      color: #fff;
+      margin-inline-end: 12px;
+  
+      .v-btn__content{
+        font-weight: 600;
+      }
+    }
+    .v-snackbar__content{
+      padding: 12px 8px 12px 12px;
+      color: #fff;
+      .v-icon{
+        margin-right: 8px;
+      }
+    }
+    .v-snackbar__wrapper{
+      background: rgba(0, 0, 0, 0.60);
+    }
+  }
+}

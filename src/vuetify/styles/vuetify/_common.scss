@@ -1,0 +1,51 @@
+@mixin light {
+  // Outlined field styles
+  .v-field--variant-outlined {
+    min-height: 44px;
+
+    &:hover {
+      color: #4d4d4d;
+      // border-color: #666666;
+    }
+
+    .v-field__input {
+      min-height: 44px !important;
+      font-size: 16px !important;
+      padding: 8px 12px !important;
+      color: var(--Text-default) !important;
+
+      input {
+        font-size: var(--Size-Body-M) !important;
+        color: var(--Text-default);
+
+        &::placeholder {
+          color: var(--Text-grey-1);
+          font-size: var(--Size-Body-M) !important;
+        }
+      }
+    }
+
+    // 输入状态时
+    // 输入框、选择框 边框颜色、宽度; label滑到顶上的颜色、字号
+    &.v-field--focused {
+      .v-field__outline {
+        color: #27509b !important;
+        --v-field-border-width: 2px !important;
+
+        .v-field__outline__notch {
+          .v-label.v-field-label--floating {
+            color: var(--Text-default) !important;
+            font-size: var(--Size-Annotation) !important;
+          }
+        }
+      }
+    }
+  }
+  
+  // Autofill styles
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: inherit !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}

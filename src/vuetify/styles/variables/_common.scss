@@ -1,0 +1,6 @@
+@use './base' as *;
+
+:root{
+  --Common-white: #{$mds-prim-color-white};
+  --Common-black: #{$mds-prim-color-black};
+}

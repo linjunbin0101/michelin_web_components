@@ -1,0 +1,55 @@
+@mixin light {
+  &.v-radio-group{
+    .v-selection-control--density-default{
+      --v-selection-control-size:24;
+      .v-selection-control__wrapper{
+        height: 24px;
+        width: 24px;
+        margin-right: 4px;
+        .v-selection-control__input{
+          height: 24px;
+          width: 24px;
+          .v-icon{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .v-selection-control-group--inline{
+      column-gap: 32px;
+    }
+    .v-selection-control-group:not(.v-selection-control-group--inline){
+      row-gap: 8px;
+    }
+    .v-selection-control{
+      &.v-selection-control--disabled{
+        opacity: 1;
+        color: #999;
+        .v-icon{
+          color: #999;
+        }
+        .v-label{
+          color: #999;
+        }
+      }
+      &.v-selection-control--dirty:not(.v-selection-control--disabled){
+        .v-icon{
+          color: #27509B;
+        }
+      }
+      &:not(.v-selection-control--dirty):not(.v-selection-control--disabled){
+        .v-icon{
+          color: #000;
+          opacity: 1;
+        }
+      }
+      .v-selection-control__input:hover::before{
+        opacity: 0.08;
+      }
+      .v-label{
+        color: #1A1A1A;
+      }
+    }
+  
+  }
+}

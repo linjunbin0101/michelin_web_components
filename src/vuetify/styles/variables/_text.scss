@@ -1,0 +1,26 @@
+@use './base' as *;
+
+:root {
+  --Text-default: #{$mds-prim-color-grey900};
+  --Text-brand: #{$prim-color-blue};
+  --Text-invert: #{$mds-prim-color-white};
+  --Text-grey-1: #{$mds-prim-color-grey700};
+  --Text-grey-2: #{$mds-prim-color-grey600};
+  --Text-disabled: #{$mds-prim-color-grey400};
+  --Text-green-status: #{$status-color-green};
+  --Text-orange-status: #{$status-color-orange-dark};
+  --Text-red-status: #{$status-color-red};
+  // font size
+  --Size-XL: #{$size-78};
+  --Size-H1: #{$size-36};
+  --Size-H2: #{$size-32};
+  --Size-H3: #{$size-28};
+  --Size-H4: #{$size-24};
+  --Size-H5: #{$size-20};
+  --Size-H6: #{$size-18};
+  --Size-Body-L: #{$size-18};
+  --Size-Body-M: #{$size-16};
+  --Size-Body-S: #{$size-14};
+  --Size-CTA-Chips: #{$size-14};
+  --Size-Annotation: #{$size-12};
+} 

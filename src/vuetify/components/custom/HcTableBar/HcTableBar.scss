@@ -1,0 +1,49 @@
+.table-total-column-config {
+  height: 30px;
+  line-height: 30px;
+  background: rgba(39, 80, 155, 0.08);
+  border-radius: 3px;
+  padding: 0 12px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.88);
+
+  .table-total {
+    color: #1677FF;
+    margin: 0 5px;
+  }
+
+  .filter-result {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 12px;
+      background: rgba(0, 0, 0, 0.25);
+      margin: 0 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.show-columns-btn {
+  padding: 2px !important;
+  border-radius: 2px !important;
+  min-width: auto !important;
+  width: auto !important;
+  height: auto !important;
+
+  &:hover {
+    background: rgba(39, 80, 155, 0.15) !important;
+  }
+}
+
+:global {
+  .v-overlay__content .v-menu > .v-card {
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+  }
+} 

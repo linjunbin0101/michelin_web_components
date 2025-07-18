@@ -1,0 +1,18 @@
+@use './base' as *;
+
+:root {
+  --Border-secondary: #{$prim-color-blue};
+  --Border-control: #{$mds-prim-color-grey200};
+  --Border-disabled: #{$mds-prim-color-grey400};
+  --Border-grey: #{$mds-prim-color-grey600};
+  --Border-invert: #{$mds-prim-color-white};
+  --Border-error: #{$status-color-red};
+  --Border-success: #{$status-color-green};
+  --Border-warning: #{$status-color-orange-dark};
+  --Border-info: #{$status-color-info};
+  --Border-btn-stroke: 1px;
+  --Border-btn-radius-normal: #{$size-4};
+  --Border-card-radius: #{$size-4};
+  --Border-container-radius: #{$size-8};
+  --Border-bottom-sheet-radius: #{$size-12};
+} 

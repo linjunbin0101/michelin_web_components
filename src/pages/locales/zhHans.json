@@ -1,0 +1,10 @@
+{
+    "title": "我的页面标题",
+    "name": "名字",
+    "species": "物种",
+    "diet": "饮食",
+    "habitat": "栖息地",
+
+    "checkboxLabel": "复选框标签",
+    "all": "全部"
+}

@@ -1,0 +1,1 @@
+export { HcTableBar } from './HcTableBar';
