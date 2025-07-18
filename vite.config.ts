@@ -14,7 +14,7 @@ export default defineConfig({
     }
   },
   server: {
-    port: 3000
+    port: 6240
   },
   optimizeDeps: {
     include: ['vue', 'vuetify'],
